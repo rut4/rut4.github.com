@@ -53,7 +53,11 @@ h1 {
 	margin-bottom: 55px;
 }
 
-.content-list p {
+.news-item {
+	position: relative;
+}
+
+.short-text {
 	text-align: justify;
 	font-family: PT Sans;
 	font-size: 14px;
@@ -62,20 +66,45 @@ h1 {
 	float: right;
 }
 
-.content-list img {
+.news-item > img {
 	float: left;
 	margin-right: 22px;
 }
 
-.content-list h3 {
+.news-item > h3 {
 	text-align: left;
 	font-family: PT Sans;
 	font-size: 18px;
 	text-decoration: underline; 
 	margin-bottom: 7px;
 	line-height: 1.25em;
+	font-weight: normal;
 }
 
 .clear {
 	clear: both;
+}
+
+.flag {
+	font-family: PT Sans, sans-serif;
+	font-size: 14px;
+	font-style: italic;
+	position: absolute;
+	top: -11px;
+	left: -40px;
+	color: #fff;
+	padding: 0.17em 0.5em;
+	margin: 0;
+}
+
+.first-flag {
+	background-color: #f66;
+}
+
+.second-flag {
+	background-color: #9c6;
+}
+
+.third-flag {
+	background-color: #69c;
 }
