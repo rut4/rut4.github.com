@@ -1,0 +1,81 @@
+body {
+	background-image: url(../images/background.png);
+	margin: 0 10px;
+}
+
+.mini-header {
+	font-variant: small-caps;
+	margin: 0;
+	display: inline-block;
+	font-family: PT Sans, sans-serif;
+	font-weight: bold;
+	font-size: 24px;
+}
+
+.enter {
+	text-decoration: none;
+	border-bottom: 1px dotted #666;
+	font-family: PT Sans, sans-serif;
+	font-size: 14px;
+	display: inline-block;
+	line-height: 0.9em;
+	color: #666;
+	float: right;
+	margin-top: 16px;
+	margin-right: 1px; 
+}
+
+h1 {
+	font-family: PT Serif, serif;
+	font-weight: bold;
+	font-size: 72px;
+	text-align: center;
+	margin: 77px 0 0 0;
+}
+
+.under-header {
+	margin-top: 0;
+	text-align: center;
+	font-family: PT Sans, sans-serif;
+	font-size: 18px;
+}
+
+.content {
+	text-align: center;
+}
+
+.content-list {
+	display: inline-block;
+}
+.content-list > li {
+	list-style-type: none;
+	width: 800px;
+	margin-bottom: 55px;
+}
+
+.content-list p {
+	text-align: justify;
+	font-family: PT Sans;
+	font-size: 14px;
+	margin: 0;
+	width: 600px;
+	float: right;
+}
+
+.content-list img {
+	float: left;
+	margin-right: 22px;
+}
+
+.content-list h3 {
+	text-align: left;
+	font-family: PT Sans;
+	font-size: 18px;
+	text-decoration: underline; 
+	margin-bottom: 7px;
+	line-height: 1.25em;
+}
+
+.clear {
+	clear: both;
+}
