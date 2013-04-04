@@ -192,16 +192,16 @@ h1 {
 
 .login-form > input[type=password] {
 	margin: 20px 0 25px;
-	padding-top: 0;
-	padding-bottom: 0;
 }
 
 .login-form > input[type=text],
 .login-form > input[type=password]
 {
 	width: 241px;
-	height: 25x;
+	height: 25px;
 	font-size: 14px;
+	padding-top: 0;
+	padding-bottom: 0;
 }
 
 .login-form > input[type=submit] {
