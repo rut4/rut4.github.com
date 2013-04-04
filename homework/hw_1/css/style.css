@@ -1,6 +1,7 @@
 body {
 	background-image: url(../images/background.png);
 	margin: 0 10px;
+	padding-bottom: 30px;
 }
 
 .mini-header {
@@ -35,6 +36,7 @@ h1 {
 
 .under-header {
 	margin-top: 0;
+	margin-bottom: 123px;
 	text-align: center;
 	font-family: PT Sans, sans-serif;
 	font-size: 18px;
@@ -42,10 +44,14 @@ h1 {
 
 .content {
 	text-align: center;
+	width: 800px;
+	margin: auto;
 }
 
 .content-list {
 	display: inline-block;
+	margin-top: 0;
+	padding-left: 0;
 }
 .content-list > li {
 	list-style-type: none;
@@ -77,6 +83,7 @@ h1 {
 	font-size: 18px;
 	text-decoration: underline; 
 	margin-bottom: 7px;
+	margin-top: 0;
 	line-height: 1.25em;
 	font-weight: normal;
 }
@@ -107,4 +114,21 @@ h1 {
 
 .third-flag {
 	background-color: #69c;
+}
+
+.page-foot {
+	width: 800px;
+	margin: auto;
+	margin-top: 50px;
+	border-top: 1px solid #666;
+}
+
+.page-foot > p {
+	font-family: PT Sans;
+	font-size: 12px;
+	color: #666;
+}
+
+.page-foot q {
+	quotes: "\00AB" "\00BB";
 }
