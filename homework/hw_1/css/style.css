@@ -179,18 +179,18 @@ h1 {
 	font-family: PT Sans;
 }
 
+.login-form > input[type=password] {
+	margin: 20px 0 25px;
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
 .login-form > input[type=text],
 .login-form > input[type=password]
 {
 	width: 241px;
 	height: 25x;
 	font-size: 14px;
-}
-
-.login-form > input[type=password] {
-	margin: 20px 0 25px;
-	padding-top: 0;
-	padding-bottom: 0;
 }
 
 .login-form > input[type=submit] {
