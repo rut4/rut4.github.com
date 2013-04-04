@@ -110,6 +110,11 @@ h1 {
 	font-weight: normal;
 }
 
+.news-item > h3 > a {
+	text-decoration: none;
+	color: #000;
+}
+
 .clear {
 	clear: both;
 }
