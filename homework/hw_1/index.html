@@ -4,11 +4,12 @@
 	<meta charset="UTF-8">
 	<title>News</title>
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/fonts.css">
 </head>
 <body>
 	<header class="page-head">
 		<h2 class="mini-header">lorem impsum news</h2>
-		<a class="enter" href="#">Войти</a>
+		<a class="login-enter" href="#">Войти</a>
 		<h1>Новости</h1>
 		<p class="under-header">скандалы &bull; интриги &bull; расследования</p>
 	</header>
@@ -44,5 +45,14 @@
 		</ul>
 	</div>
 	<footer class="page-foot"><p>&copy; ЗАО <q>Лорем ипсум ньюс</q></p></footer>
+	<div class="overlay"></div>
+	<div class="login-popup">
+		<form class="login-form">
+			<input type="text" name="login" required="required" placeholder="Логин">
+			<input type="password" name="password" required="required" placeholder="Пароль">
+			<input type="submit" value="Войти">
+			<a href="#" class="login-cancel">Отмена</a>
+		</form>
+	</div>
 </body>
 </html>
