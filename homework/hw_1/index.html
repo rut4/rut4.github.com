@@ -5,15 +5,20 @@
 	<title>News</title>
 	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/style.css">
+	<script src="js/scripts.js"></script>
 </head>
 <body>
-	<header class="page-head">
+	<header class="page-head" id="headerId">
 		<h2 class="mini-header">lorem impsum news</h2>
-		<a class="login-enter" href="#">Войти</a>
+		<a class="login-enter" id="enterId" href="#">Войти</a>
 		<h1>Новости</h1>
-		<p class="under-header">скандалы &bull; интриги &bull; расследования</p>
+		<ul class="under-header">
+			<li>скандалы</li>
+			<li>&bull; интриги</li>
+			<li>&bull; расследования</li>
+		</ul>
 	</header>
-	<div class="content">
+	<div class="content" id="contentId">
 		<ul class="content-list">
 			<li>
 				<div class="news-item">
@@ -44,14 +49,14 @@
 			</li>
 		</ul>
 	</div>
-	<footer class="page-foot"><p>&copy; ЗАО <q>Лорем ипсум ньюс</q></p></footer>
-	<div class="overlay"></div>
-	<div class="login-popup">
+	<footer class="page-foot" id="footerId"><p>&copy; ЗАО <q>Лорем ипсум ньюс</q></p></footer>
+	<div class="overlay" id="overlayId"></div>
+	<div class="login-popup" id="popupId">
 		<form class="login-form">
 			<input type="text" name="login" required="required" placeholder="Логин">
 			<input type="password" name="password" required="required" placeholder="Пароль">
 			<input type="submit" value="Войти">
-			<a href="#" class="login-cancel">Отмена</a>
+			<a href="#" class="login-cancel" id="cancelId">Отмена</a>
 		</form>
 	</div>
 </body>
