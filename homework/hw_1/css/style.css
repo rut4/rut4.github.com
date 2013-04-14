@@ -252,7 +252,7 @@ h1 {
 	color: #369;
 }
 
-.category-links li:first-child a {
+.category-links span {
 	text-decoration: none;
 	color: #000;
 	font-weight: bold;
