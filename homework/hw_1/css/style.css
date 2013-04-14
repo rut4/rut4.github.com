@@ -230,7 +230,7 @@ h1 {
 .category-links {
 	font-family: PT Sans, sans-serif;
 	font-size: 14px;
-	margin-left: -webkit-calc(50% - 205px);
+	margin-left: -webkit-calc(50% - 205px - 2.35em);
 }
 
 .category-links li {
@@ -238,8 +238,17 @@ h1 {
 	margin-right: 18px;
 	margin-left: 0;
 }
-.category-links a {
+
+.category-links a,
+.text a,
+.other-news-list a {
 	color: #036;
+}
+
+.category-links a:hover,
+.text a:hover,
+.other-news-list a:hover {
+	color: #369;
 }
 
 .category-links li:first-child a {
@@ -254,7 +263,7 @@ h1 {
 	top: 0;
 	margin: 16px 10px 0 0;
 	border-radius: 14px;
-	box-shadow: 2px 2px 5px -2px #999;
+	box-shadow: 0 1px 4px #999;
 	background: #ffffff; /* Old browsers */
 	background: -moz-linear-gradient(top, #ffffff 0%, #f9f9f9 21%, #e0e0e0 79%, #dadada 100%); /* FF3.6+ */
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(21%,#f9f9f9), color-stop(79%,#e0e0e0), color-stop(100%,#dadada)); /* Chrome,Safari4+ */
@@ -265,16 +274,41 @@ h1 {
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#dadada',GradientType=0 ); /* IE6-9 */
 }
 
+.profile:hover > .profile-links {
+	display: block;
+}
+
 .profile-name {
-	margin: 3px 6px;
+	margin: 3px 9px;
 	font-size: 14px;
 	font-family: PT Sans, sans-serif;
 	color: #666;
 	text-shadow: 1px 1px #fff;
 }
 
+.profile-name > img {
+	box-shadow: 1px 1px 0 #fff;
+}
+
 .profile-links {
 	display: none;
+	padding: 0;
+	margin: 12px 0 0 20px;
+}
+
+.profile-links > li {
+	display: block;
+	margin-bottom: 7px;
+}
+
+.profile-links a {
+	color: #666;
+	font-family: PT Sans, sans-serif;
+	font-size: 14px;
+}
+
+.profile-links a:hover {
+	color: #999;
 }
 
 .news-content {
@@ -338,6 +372,7 @@ h1 {
 	display: inline-block;
 	width: 190px;
 	float: left;
+	margin-left: 15px;
 
 }
 
