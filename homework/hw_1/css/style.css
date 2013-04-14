@@ -230,6 +230,7 @@ h1 {
 .category-links {
 	font-family: PT Sans, sans-serif;
 	font-size: 14px;
+	margin-left: 425px; /* no webkit */
 	margin-left: -webkit-calc(50% - 205px - 2.35em);
 }
 
@@ -286,10 +287,6 @@ h1 {
 	text-shadow: 1px 1px #fff;
 }
 
-.profile-name > img {
-	box-shadow: 1px 1px 0 #fff;
-}
-
 .profile-links {
 	display: none;
 	padding: 0;
@@ -325,6 +322,7 @@ h1 {
 	color: #666;
 	font-family: Veranda;
 	font-size: 10px;
+	line-height: 1.6em;
 
 }
 
@@ -386,6 +384,7 @@ h1 {
 .other-news-list p {
 	font-family: PT Sans, sans-serif;
 	font-size: 12px;
+	color: #333;
 }
 
 .other-news + .page-foot {
