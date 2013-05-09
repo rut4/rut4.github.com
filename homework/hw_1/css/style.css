@@ -63,6 +63,7 @@ h1 {
 .under-header > li {
 	display: inline-block;
 }
+
 .content {
 	text-align: center;
 	width: 800px;
@@ -119,10 +120,6 @@ h1 {
 	color: #000;
 }
 
-.clear {
-	clear: both;
-}
-
 .flag {
 	font-family: PT Sans, sans-serif;
 	font-size: 14px;
@@ -168,6 +165,7 @@ h1 {
 	right: 0;
 	left: 0;
 	bottom: 0;
+	display: none;
 }
 
 .login-popup {
@@ -178,6 +176,7 @@ h1 {
 	left: -webkit-calc(50% - 183px);
 	background-color: #fff;
 	box-shadow: 0 0 25px #666;
+	display: none;
 }
 
 .login-form {
@@ -220,10 +219,6 @@ h1 {
 	background-image: -webkit-linear-gradient(top, #ccc 0%, #fff 100%);
 }
 
-.overlay,
-.login-popup {
-	display: none;
-}
 
 /* HW_1_1 */
 
@@ -355,7 +350,7 @@ h1 {
 	position: relative;
 }
 
-.other-news > h1 {
+.other-news > h2 {
 	position: absolute;
 	font-family: PT Sans;
 	font-weight: bold;
@@ -378,7 +373,7 @@ h1 {
 
 }
 
-.other-news-list h1 {
+.other-news-list h3 {
 	font-family: PT Sans, sans-serif;
 	font-size: 14px;
 	text-align: left;
