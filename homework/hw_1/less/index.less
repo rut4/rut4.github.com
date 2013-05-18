@@ -62,7 +62,6 @@ body {
 }
 
 .content {
-	text-align: center;
 	width: percentage(800/1349);
 	margin: auto;
 
@@ -91,6 +90,11 @@ body {
 		.pos(relative);
 		float: left;
 		margin-right: percentage(22/800);
+		width: percentage(178/800);
+
+		img {
+			max-width: 100%;
+		}
 	}
 
 	h3 {
@@ -99,6 +103,9 @@ body {
 		text-decoration: underline; 
 		margin: 0 0 percentage(3/800);
 		line-height: 1.25em;
+		display: inline-block;
+		width: percentage(600/800);
+		float: left;
 
 		a {
 			text-decoration: none;
