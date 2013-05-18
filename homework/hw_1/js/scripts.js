@@ -1,22 +1,22 @@
-window.onload = function () {
-	document.getElementById("enterId").onclick = ShowPopup;
-}
+$(function () {
+	$("#enterId").on("click", ShowPopup);
+})
 
 function ShowPopup () {
-	document.getElementById("overlayId").style.display = "block";
-	document.getElementById("popupId").style.display = "block";
-	document.getElementById("headerId").classList.add("blur");
-	document.getElementById("contentId").classList.add("blur");
-	document.getElementById("footerId").classList.add("blur");
-	document.getElementById("cancelId").onclick = ClosePopup;
+	$("#overlayId").fadeIn(500);
+	$("#popupId").fadeIn(500);
+	$("#headerId").addClass("blur");
+	$("#contentId").addClass("blur");
+	$("#footerId").addClass("blur");
+	$("#cancelId").on("click", ClosePopup);
 	return false;
 }
 
 function ClosePopup () {
-	document.getElementById("overlayId").style.display = "none";
-	document.getElementById("popupId").style.display = "none";
-	document.getElementById("headerId").classList.remove("blur");
-	document.getElementById("contentId").classList.remove("blur");
-	document.getElementById("footerId").classList.remove("blur");
+	$("#overlayId").fadeOut(500);
+	$("#popupId").fadeOut(500);
+	$("#headerId").removeClass("blur");
+	$("#contentId").removeClass("blur");
+	$("#footerId").removeClass("blur");
 	return false;
 }
