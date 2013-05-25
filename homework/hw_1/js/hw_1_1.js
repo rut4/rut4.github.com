@@ -22,7 +22,7 @@ function AddAnswer(event) {
 
 function AddComment(event) {
 	event.preventDefault();
-	if ($(this).find("input[name=login]").val() == undefined || $(this).find("textarea").val() == undefined)
+	if ($(this).find("input[name=login]").val() == "" || $(this).find("textarea").val() == "")
 		return false;
 
 	var comment = $("<div class='comment-parent clearfix'><section class='comment'><p><span class='login'></span><span class='date-time'></span></p><p class='text-of-comment'></p><a class='answer-link' id='addAnswer' href='#'>Ответить</a></section><section class='answers'></section></div>");
@@ -33,6 +33,9 @@ function AddComment(event) {
 		$(this).closest(".comment").next().prepend(comment);
 		$(this).parent().animate({"height": 0}, function () { $(this).remove(); });
 	}
-	else 
+	else {
 		$("#oldComments").prepend(comment);
+		$(this).find("input[name=login]").val("");
+		$(this).find("textarea").val("") ;
+	}
 }
