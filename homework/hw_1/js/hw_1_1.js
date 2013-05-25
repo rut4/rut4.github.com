@@ -146,6 +146,7 @@ function AddComment(event) {
 	});
 
 	if (answer) {
+		$(this).parent().prev().text("Ответить").attr("id", "addAnswer");
 		$(this).closest(".comment").next().prepend(comment);
 		$(this).parent().slideUp(500, function() { $(this).remove() });
 	}
