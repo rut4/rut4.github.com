@@ -29,9 +29,10 @@ function AddComment(event) {
 	var answer = $(this).closest("section").attr("id") == "newComment" ? false : true;
 	comment.find("span.login").text($(this).find("input[name=login]").val());
 	comment.find(".text-of-comment").text($(this).find("textarea").val());
-	if (answer)
+	if (answer) {
 		$(this).closest(".comment").next().prepend(comment);
-	else
+		$(this).parent().animate({"height": 0}, function () { $(this).remove(); });
+	}
+	else 
 		$("#oldComments").prepend(comment);
-	$(this).parent().animate({"height": 0}, function () { $(this).remove(); });
 }
