@@ -1,4 +1,4 @@
-@media screen and (max-width: 768px), screen and (max-device-width: 768px) {
+@media screen and (max-width: 768px), screen and (max-device-width: 768px) and (orientation: portrait) {
 	.category-links {
 		margin: 40px 0 0;
 	}
@@ -17,6 +17,12 @@
 		.text {
 			width: 100%;
 		}
+	}
+
+	.comments {
+		width: percentage(502/640);
+		padding: percentage(30/640);
+		margin: auto;
 	}
 
 	.other-news {

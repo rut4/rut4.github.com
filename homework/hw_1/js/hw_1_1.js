@@ -11,6 +11,7 @@ $(function () {
 
 function AddAnswer(event) {
 	event.preventDefault();
+	$(".warning-empty-field").each(function () { $(this).remove() });
 	var oldComments = $("#oldComments");
 	oldComments.find(".form_comment").slideUp(500, function() { $(this).remove() });
 	oldComments.find("#deleteAnswersForm").text("Ответить").attr("id", "addAnswer");
@@ -32,7 +33,12 @@ function DeleteAnswersForm (event) {
 
 function AddComment(event) {
 	event.preventDefault();
+	$(".warning-empty-field").each(function () { $(this).remove() });
 	if ($(this).find("input[name=login]").val() == "" || $(this).find("textarea").val() == "") {
+		var warning = $("<p class='warning-empty-field'><span>!</span> Пожалуйста, заполните все поля перед отправкой</p>");
+		warning.css("left", -window.screen.width/2 + "px");
+		$(this).find(".textarea-parent").after(warning);
+		warning.animate({"left": "-1.5em"}, 1000, "easeOutBounce");
 		return false;
 	}
 

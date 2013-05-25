@@ -108,7 +108,7 @@
 
 .comments {
 	margin: 40px percentage(275/1349) auto percentage(430/1349);
-	padding: 20px;
+	padding: 30px;
 	border: 1px solid #ccc;
 	background-color: #fff;
 	h3 {
@@ -118,6 +118,8 @@
 }
 
 .form_comment {
+	.pos(relative);
+
 	input[type=text],
 	textarea {
 		background: none;
@@ -201,6 +203,23 @@
 	.answers {
 		width: percentage(500/610);
 		float: right;
+	}
+}
+
+.warning-empty-field {
+	.f-sans(12px);
+	color: #f00;
+	margin: 0;
+	.pos(absolute, auto, auto, 2.4em, -1.5em);
+	span {
+		font-weight: bold;
+		text-align: center;
+		color: #fff;
+		width: 1.27em;
+		margin: 0;
+		display: inline-block;
+		.border-radius(20px);
+		background-color: #f00;
 	}
 }
 
