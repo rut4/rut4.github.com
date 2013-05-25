@@ -3,20 +3,9 @@ $(function () {
 	if (touch) {
 		$(".profile").addClass("no-touch");
 	}
-	$("#comments")
-	.on("focus", "#commentsText", IncreaseHeight)
-	.on("blur", "#commentsText", DecreaseHeight)
-	.on("click", "#addAnswer", AddAnswer);
+	$("#comments").on("click", "#addAnswer", AddAnswer);
 
 })
-
-function IncreaseHeight() {
-	$(this).animate({"height": $(this).height()*2 + "px"});
-}
-
-function DecreaseHeight() {
-	$(this).animate({"height": $(this).height()/2 + "px"});
-}
 
 function AddAnswer(event) {
 	event.preventDefault();

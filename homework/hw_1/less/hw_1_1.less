@@ -142,6 +142,11 @@
 			height: 50px;
 			resize: none;
 			width: 98.4%;
+			.transition(~"height 0.5s 1s ease");
+			&:focus {
+				height: 100px;
+				transition-delay: 0;
+			}
 		}
 	}
 
