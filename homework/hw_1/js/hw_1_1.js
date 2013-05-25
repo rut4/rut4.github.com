@@ -41,14 +41,104 @@ function AddComment(event) {
 	comment.find("span.login").text($(this).find("input[name=login]").val());
 	comment.find(".text-of-comment").text($(this).find("textarea").val());
 
-	$.ajax("http://json-time.appspot.com/time.json?tz=Europe/Moscow", {
+	$.ajax("http://json-time.appspot.com/time.json?tz=Europe/Moscow",
+	{
+		dataType: "JSONP",
+		crossDomain: true,
 		type: "get",
-		dataType: "json",
 		success: function (data) {
-			var day = data.datetime.slice(0, 3);
-			comment.find(".date-time").text(day);
+			var dayOfWeek = data.datetime.slice(0, 3);
+			var day = data.datetime.slice(5, 7);
+			var month = data.datetime.slice(8, 11);
+			var year = data.datetime.slice(12, 16);
+			var time = data.datetime.slice(17, 22);
+
+			switch (dayOfWeek) {
+				case "Sun": {
+					dayOfWeek = "воскресенье";
+					break;
+				}
+				case "Mon": {
+					dayOfWeek = "понедельник";
+					break;
+				}
+				case "Tue": {
+					dayOfWeek = "вторник";
+					break;
+				}
+				case "Wed": {
+					dayOfWeek = "среда";
+					break;
+				}
+				case "Thu": {
+					dayOfWeek = "четверг";
+					break;
+				}
+				case "Fri": {
+					dayOfWeek = "пятница";
+					break;
+				}
+				case "Sat": {
+					dayOfWeek = "суббота";
+					break;
+				}
+			}
+
+			switch (month) {
+				case "January": {
+					month = "01";
+					break;
+				}
+				case "February": {
+					month = "02";
+					break;
+				}
+				case "March": {
+					month = "03";
+					break;
+				}
+				case "April": {
+					month = "04";
+					break;
+				}
+				case "May": {
+					month = "05";
+					break;
+				}
+				case "June": {
+					month = "06";
+					break;
+				}
+				case "July": {
+					month = "07";
+					break;
+				}
+				case "August": {
+					month = "08";
+					break;
+				}
+				case "September": {
+					month = "09";
+					break;
+				}
+				case "October": {
+					month = "10";
+					break;
+				}
+				case "November": {
+					month = "11";
+					break;
+				}
+				case "December": {
+					month = "12";
+					break;
+				}
+			}
+
+			comment.find(".date-time").text(time + ", " + dayOfWeek + ", " + day + "." + month + "." + year);
 		}
 	});
+
 	if (answer) {
 		$(this).closest(".comment").next().prepend(comment);
 		$(this).parent().slideUp(500, function() { $(this).remove() });
