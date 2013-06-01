@@ -91,19 +91,19 @@ function AddComment(event) {
 			}
 
 			switch (month) {
-				case "January": {
+				case "Jan": {
 					month = "01";
 					break;
 				}
-				case "February": {
+				case "Feb": {
 					month = "02";
 					break;
 				}
-				case "March": {
+				case "Mar": {
 					month = "03";
 					break;
 				}
-				case "April": {
+				case "Apr": {
 					month = "04";
 					break;
 				}
@@ -111,31 +111,31 @@ function AddComment(event) {
 					month = "05";
 					break;
 				}
-				case "June": {
+				case "Jun": {
 					month = "06";
 					break;
 				}
-				case "July": {
+				case "Jul": {
 					month = "07";
 					break;
 				}
-				case "August": {
+				case "Aug": {
 					month = "08";
 					break;
 				}
-				case "September": {
+				case "Sep": {
 					month = "09";
 					break;
 				}
-				case "October": {
+				case "Oct": {
 					month = "10";
 					break;
 				}
-				case "November": {
+				case "Nov": {
 					month = "11";
 					break;
 				}
-				case "December": {
+				case "Dec": {
 					month = "12";
 					break;
 				}
