@@ -94,7 +94,10 @@ function readFile(text) {
    	{
    		var char = text[i];
    		prevState = state;
-   		state = table[state][classOfChar(char)];
+		state = table[state][classOfChar(char)];
+		if (prevState === 11 && state === undefined)
+			state = 11;
+		
    		if (state === "s") {
    			switch (prevState) {
    				case "s": {
