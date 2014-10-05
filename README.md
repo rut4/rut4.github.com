@@ -1,3 +1,3 @@
 #Fractals
 
-[Open](/fractals)
+[Open](http://rut4.github.io/fractals)
